@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcOUCjjK7cUt5KX6sbRFlH6cU1Y4rZLGBMQ&s" >
+        <h1>View Attendance</h1>
+    </header>
+    <main>
+        <section class="view-attendance-section">
+            <form id="filterForm">
+                <label for="facultyFilter">Faculty Name:</label>
+                <select id="facultyFilter" name="facultyFilter">
+                    <option value="" disabled selected>Select Faculty</option>
+                </select><br><br>
+
+                <label for="subjectFilter">Subject:</label>
+                <select id="subjectFilter" name="subjectFilter">
+                    <option value="" disabled selected>Select Subject</option>
+                </select><br><br>
+
+                <label for="batchFilter">Batch:</label>
+                <select id="batchFilter" name="batchFilter">
+                    <option value="" disabled selected>Select Batch</option>
+                </select><br><br>
+
+                <button type="button" onclick="filterAttendance()">Filter Attendance</button>
+            </form>
+
+            <div id="attendanceContainer">
+                <!-- Filtered attendance records will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Attendance Management System</p>
+    </footer>
+
+    <script src="script5.js"></script>
+</body>
+</html>

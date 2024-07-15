@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcOUCjjK7cUt5KX6sbRFlH6cU1Y4rZLGBMQ&s" >
+        <h1>Mark Attendance</h1>
+    </header>
+    <main>
+        <section class="attendance-section">
+            <form id="attendanceForm">
+                <label for="facultyName">Faculty Name:</label>
+                <select id="facultyName" name="facultyName" required>
+                    <option value="" disabled selected>Select Faculty</option>
+                </select><br><br>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select Subject</option>
+                </select><br><br>
+
+                <label for="batch">Batch:</label>
+                <select id="batch" name="batch" required>
+                    <option value="" disabled selected>Select Batch</option>
+                </select><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <h3>Student Attendance</h3>
+                <div id="studentsContainer">
+                    <!-- Student rows will be dynamically inserted here -->
+                </div>
+
+                <button type="submit">Submit Attendance</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Attendance Management System</p>
+    </footer>
+
+    <script src="script4.js"></script>
+</body>
+</html>

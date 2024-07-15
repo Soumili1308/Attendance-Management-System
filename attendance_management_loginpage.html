@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Attendance Management System</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcOUCjjK7cUt5KX6sbRFlH6cU1Y4rZLGBMQ&s" >
+        <h1>Please Login Here</h1>
+    </header>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="loginAs">Logging in as:</label>
+            <select id="loginAs" name="loginAs">
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+            </select><br><br>
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-link" id="forgotUsernameLink">Forgot Username?</a>
+            <a href="#" class="forgot-link" id="forgotPasswordLink">Forgot Password?</a>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Attendance Management System</p>
+    </footer>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
